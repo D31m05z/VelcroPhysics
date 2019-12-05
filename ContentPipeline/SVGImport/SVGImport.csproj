@@ -18,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\VelcroPhysics\VelcroPhysics.MonoGame.csproj" />
+    <ProjectReference Include="..\..\Physics.csproj" />
   </ItemGroup>
-
 </Project>
