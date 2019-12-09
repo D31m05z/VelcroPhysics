@@ -608,7 +608,7 @@ namespace VelcroPhysics.Tools.Triangulation.Delaunay.Delaunay.Sweep
                         && ep == tcx.EdgeEvent.ConstrainedEdge.P)
                     {
                         if (tcx.IsDebugEnabled)
-                            Console.WriteLine("[FLIP] - constrained edge done"); // TODO: remove
+                            Debug.WriteLine("[FLIP] - constrained edge done"); // TODO: remove
                         t.MarkConstrainedEdge(ep, eq);
                         ot.MarkConstrainedEdge(ep, eq);
                         Legalize(tcx, t);
@@ -617,7 +617,7 @@ namespace VelcroPhysics.Tools.Triangulation.Delaunay.Delaunay.Sweep
                     else
                     {
                         if (tcx.IsDebugEnabled)
-                            Console.WriteLine("[FLIP] - subedge done"); // TODO: remove
+                            Debug.WriteLine("[FLIP] - subedge done"); // TODO: remove
 
                         // XXX: I think one of the triangles should be legalized here?
                     }
@@ -625,7 +625,7 @@ namespace VelcroPhysics.Tools.Triangulation.Delaunay.Delaunay.Sweep
                 else
                 {
                     if (tcx.IsDebugEnabled)
-                        Console.WriteLine("[FLIP] - flipping and continuing with triangle still crossing edge");
+                        Debug.WriteLine("[FLIP] - flipping and continuing with triangle still crossing edge");
 
                     // TODO: remove
                     Orientation o = TriangulationUtil.Orient2d(eq, op, ep);

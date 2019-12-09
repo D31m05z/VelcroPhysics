@@ -52,7 +52,7 @@ namespace VelcroPhysics.Tools.Cutting
         /// </returns>
         private static List<Vertices> Execute(Vertices subject, Vertices clip, PolyClipType clipType, out PolyClipError error)
         {
-            Debug.Assert(subject.IsSimple() && clip.IsSimple(), "Non simple input!", "Input polygons must be simple (cannot intersect themselves).");
+            Debug.Assert(subject.IsSimple() && clip.IsSimple(), "Non simple input! Input polygons must be simple (cannot intersect themselves).");
 
             // Copy polygons
             Vertices slicedSubject;
